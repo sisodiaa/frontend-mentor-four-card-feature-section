@@ -2,43 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Four card feature section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
-
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
+  <div class="container">
+    <section class="features" role="main">
+      <h1 class="features__heading" role="heading">
+        Reliable, efficient delivery
+        <span>Powered by Technology</span>
+      </h1>
+      
+      <p class="features__lead">
+        Our Artificial Intelligence powered tools use millions of project data points 
+        to ensure that your project is successful
+      </p>
+      
+      <div class="features__cards" role="contentinfo">
+        <div class="feature__card" style="--top-border-color: hsl(180, 62%, 55%)">
+          <h2 class="feature__name">Supervisor</h2>
+          <p class="feature__description">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img class="feature__icon" src="images/icon-supervisor.svg" alt="Supervisor">
+        </div>
+        
+        <div class="feature__card" style="--top-border-color: hsl(0, 78%, 62%)">
+          <h2 class="feature__name">Team Builder</h2>
+          <p class="feature__description">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img class="feature__icon" src="images/icon-team-builder.svg" alt="Team Builder">
+        </div>
+        
+        <div class="feature__card" style="--top-border-color: hsl(34, 97%, 64%)">
+          <h2 class="feature__name">Karma</h2>
+          <p class="feature__description">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img class="feature__icon" src="images/icon-karma.svg" alt="Karma">
+        </div>
+        
+        <div class="feature__card" style="--top-border-color: hsl(212, 86%, 65%)">
+          <h2 class="feature__name">Calculator</h2>
+          <p class="feature__description">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img class="feature__icon" src="images/icon-calculator.svg" alt="Calculator">
+        </div>
+      </div>
+    </section>
+  </div>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Abhishek Sisodia</a>.
     </p>
   </footer>
 </body>
