@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-$breakpoint-mobile: 60em;
+$breakpoint-mobile: 70.8em;
 
 :root {
   --color-dark-blue:    hsl(234, 12%, 34%);
@@ -36,6 +36,7 @@ body {
 
 .features {
   width: 86%;
+  max-width: 25rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -95,11 +96,59 @@ body {
   &__description {
     font-size: 0.95rem;
     color: var(--color-grayish-blue);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 
   &__icon {
     align-self: flex-end;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-mobile) {
+  .features {
+    width: 70%;
+    max-width: 67.2rem;
+
+    &__heading {
+      font-size: 3rem;
+    }
+
+    &__lead {
+      width: 67%;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 1.35rem;
+    }
+
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-between;
+      height: 37rem;
+      row-gap: 2rem;
+      column-gap: 1.5rem;
+    }
+  }
+
+  .feature {
+    &__card {
+      width: 31.8%;
+      padding: 2rem;
+      margin-bottom: 0rem;
+
+      &:first-child {
+        margin-top: 8.25rem;
+      }
+
+      &:last-child {
+        margin-top: 8.25rem;
+      }
+    }
+
+    &__description {
+      margin-bottom: 3rem;
+    }
   }
 }
 

@@ -33,6 +33,7 @@ body {
 
 .features {
   width: 86%;
+  max-width: 25rem;
   margin-top: 6rem;
   margin-bottom: 3rem;
   text-align: center;
@@ -84,12 +85,51 @@ body {
 .feature__description {
   font-size: 0.95rem;
   color: var(--color-grayish-blue);
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 .feature__icon {
   align-self: flex-end;
 }
 
+@media only screen and (min-width: 70.8em) {
+  .features {
+    width: 70%;
+    max-width: 67.2rem;
+  }
+  .features__heading {
+    font-size: 3rem;
+  }
+  .features__lead {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.35rem;
+  }
+  .features__cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 37rem;
+    row-gap: 2rem;
+    column-gap: 1.5rem;
+  }
+
+  .feature__card {
+    width: 31.8%;
+    padding: 2rem;
+    margin-bottom: 0rem;
+  }
+  .feature__card:first-child {
+    margin-top: 8.25rem;
+  }
+  .feature__card:last-child {
+    margin-top: 8.25rem;
+  }
+  .feature__description {
+    margin-bottom: 3rem;
+  }
+}
 .attribution {
   display: none;
 }
